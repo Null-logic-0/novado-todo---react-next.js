@@ -1,0 +1,54 @@
+@import '../../color.scss';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 736px;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid $taskBorder;
+    background: $taskItemBG;
+    box-shadow: $taskshadow;
+}
+
+.textArea {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.checkbox {
+    width: 19.3px;
+    height: 19.3px;
+    border-radius: 50%;
+    border: 2px solid $taskTextColor;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    appearance: auto;
+    clip-path: circle(50% at 50% 50%);
+    background-color: $checked;
+    accent-color: $checked;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.text {
+    color: $secondaryTextColor;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #808080;
+}

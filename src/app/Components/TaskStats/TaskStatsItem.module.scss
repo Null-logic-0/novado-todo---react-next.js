@@ -1,0 +1,28 @@
+@import '../../color.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 700;
+    color: $taskTextColor;
+}
+
+.color {
+    color: $taskDoneColor;
+}
+
+.amount {
+    color: $secondaryTextColor;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: $taskBorder;
+    padding: 2px 8px;
+    border-radius: 50%;
+
+}

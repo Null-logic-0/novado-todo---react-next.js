@@ -1,0 +1,44 @@
+@import '../../color.scss';
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.input {
+    padding: 16px;
+    max-width: 598px;
+    width: 100%;
+    color: $secondaryTextColor;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: $inputBG;
+    border: 1px solid $inputBorder;
+}
+
+.input::placeholder{
+    color: $mainTextColor;
+}
+
+.button {
+    background-color: $addButton;
+    color: $secondaryTextColor;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    gap: 8px;
+}
+
+.button:hover{
+    background-color: $addButtonHover;
+}
+
